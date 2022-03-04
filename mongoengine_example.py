@@ -1,11 +1,10 @@
 from flask import Flask
-from flask_mongoengine import MongoEngine
 from mongoengine import *
 import names
 
 app = Flask(__name__)
 
-connect(host="mongodb+srv://blog:blog@cluster0.2grje.mongodb.net/python_db")
+connect(host="<CONNECTION_STRING>")
 
 class User(Document):
     name = StringField()

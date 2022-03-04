@@ -5,7 +5,7 @@ import names
 
 app = Flask(__name__)
 
-client = MongoClient("mongodb+srv://blog:blog@cluster0.2grje.mongodb.net/myFirstDatabase")
+client = MongoClient("<CONNECTION_STRING>")
 db = client.flask_example_db
 
 @app.route("/create")
